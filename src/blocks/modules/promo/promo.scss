@@ -1,0 +1,81 @@
+.promo {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__item {
+        position: relative;
+        padding: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        &_half {
+            width: 560px;
+            height: 278px;
+            justify-content: flex-end;
+            @media (max-width: 1150px) {
+                width: 100%;
+            }
+            @media (max-width: 768px) {
+                height: 200px;
+            }
+        }
+        &_third {
+            width: 370px;
+            height: 153px;
+            gap: 10px;  
+            @media (max-width: 1150px) {
+                width: 100%
+            } 
+            @media (max-width: 768px) {
+                justify-content: center;
+                height: 155px;
+            }
+        }
+        &_righted {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            @media (max-width: 768px) {
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+    }
+    &__caption {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    &__portfile-link {
+        font-size: inherit;
+        font-weight: inherit;
+    }
+    &__item-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__item-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: right;
+        @media (max-width: 768px) {
+            font-size: 22px;
+            line-height: 25px;
+        }
+    }
+    &__price-container {
+        text-align: center;
+        @media (max-width: 768px) {
+            text-align: left;
+        }
+        .text {
+            margin: 0 0 5px 0;
+        }
+    }
+}
